@@ -4,6 +4,6 @@ public class Ball {
 
     public void tryRun(boolean condition) {
         String fin = condition ? "Ball eaten" : "Ball escaped";
-
+        System.out.println(fin);
     }
 }
