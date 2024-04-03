@@ -9,10 +9,13 @@ public class Bus implements Transport {
 
     @Override
     public void passengers(int sum) {
+        int amount = 0;
+        amount += sum;
+        System.out.println("Количество пассажиров" + amount);
     }
 
     @Override
     public double fillUp(int sum) {
-      return 0;
+      return sum * 65.5;
     }
 }
