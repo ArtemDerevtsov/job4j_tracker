@@ -9,7 +9,7 @@ public class FactorialRecursion {
     }
 
     public static void main(String[] args) {
-        int result = calc(4);
+        int result = calc(3);
         System.out.println(result);
     }
 }
