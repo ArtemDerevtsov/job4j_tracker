@@ -1,12 +1,9 @@
 package ru.job4j.tracker;
 
 import ru.job4j.tracker.action.*;
-import ru.job4j.tracker.input.ConsoleInput;
 import ru.job4j.tracker.input.Input;
 import ru.job4j.tracker.output.ConsoleOutput;
 import ru.job4j.tracker.output.Output;
-
-import static java.lang.System.out;
 
 public class StartUI {
     private final Output output;
@@ -21,7 +18,7 @@ public class StartUI {
             showMenu(actions);
             int select = input.askInt("Выбрать: ");
             if (select < 0 || select >= actions.length) {
-                out.println("Неверный ввод, вы можете выбрать: 0 .. " + (actions.length - 1));
+                output.println("Неверный ввод, вы можете выбрать: 0 .. " + (actions.length - 1));
                 continue;
             }
             UserAction action = actions[select];
